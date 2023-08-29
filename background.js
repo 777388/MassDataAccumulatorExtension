@@ -10,7 +10,7 @@ chrome.contextMenus.onClicked.addListener(function (info, tab) {
     const time = now.getTime();
     const date = now.toLocaleDateString();
     for (let v = 0; v <= 45; v ++) {
-      for(let f = 0; f <= 128; f++){
+      for(let f = 0; f <= 149186; f++){
         const bingbong = String.fromCharCode(f);
         const selectedText = time + date + bingbong;
         const yup = selectedText.split("").reduce((acc, char) => acc + char.charCodeAt(), 0).toString();
